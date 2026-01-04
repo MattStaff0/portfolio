@@ -1,16 +1,52 @@
-# React + Vite
+# Portfolio v1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React and Tailwind CSS. Designed to showcase projects and technical skills with a clean, dark-mode aesthetic.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Framework:** [React](https://react.dev/) (via [Vite](https://vitejs.dev/))
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** [React Icons](https://react-icons.github.io/react-icons/) (Lucide & FontAwesome)
+* **Deployment:** GitHub Pages / Vercel (Ready to deploy)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Responsive Navbar:** Semantic HTML structure with social links and smooth hover effects.
+* **Interactive Hero Section:** Includes a "stacked card" profile image with a toggle/hover animation (Personal vs. Professional mode).
+* **Dark Mode UI:** Built with a custom slate/gray color palette (`bg-gray-900`, `text-gray-300`).
+* **Performance:** Optimized with Vite for lightning-fast HMR and build times.
 
-## Expanding the ESLint configuration
+## 🛠️ Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/portfolio-v1.git](https://github.com/YOUR_USERNAME/portfolio-v1.git)
+    cd portfolio-v1
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/          # Static images (profile photos)
+├── components/      # Reusable UI components
+│   ├── Hero.jsx     # Main landing area with text & photo
+│   ├── Navbar.jsx   # Top navigation & social links
+│   └── ProfileImage.jsx # The interactive photo card
+├── App.jsx          # Main application layout
+└── index.css        # Tailwind directives & global styles
