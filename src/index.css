@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global page baseline */
 html,
 body,
 #root {
@@ -11,5 +10,20 @@ body,
 }
 
 body {
+  background-color: #111827;
   margin: 0;
+  font-family: sans-serif;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body,
+#root {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
