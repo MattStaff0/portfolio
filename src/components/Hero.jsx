@@ -1,4 +1,6 @@
 import ProfileImage from "./ProfileImage";
+import resume from "../assets/resume/resume.pdf";
+import { LuFileUser } from "react-icons/lu";
 
 export default function Hero() {
   return (
@@ -13,7 +15,14 @@ export default function Hero() {
             full stack development.
           </h3>
 
-          {/* TODO: want a link to my resume here  */}
+          <a
+            href={resume}
+            download="Matthew_Stafford_Resume.pdf"
+            className="mt-12 w-fit flex items-center gap-2 border border-gray-500 rounded-lg px-5 py-3 hover:bg-gray-800 hover:text-white transition-all duration-300"
+          >
+            <LuFileUser className="w-7 h-7" />
+            <span>Download My Resume</span>
+          </a>
         </div>
       </div>
       {/* our photo goes here */}

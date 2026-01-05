@@ -44,7 +44,7 @@ export default function WorkExp({
         {techStack.map((Icon, IconIndex) => (
           <Icon
             key={IconIndex}
-            className="w-6 h-6 text-gray-400 hover:text-white transition-colors mx-2 mb-2"
+            className="w-8 h-8 text-gray-400 hover:text-white transition-colors mx-2 mb-2"
           />
         ))}
       </div>

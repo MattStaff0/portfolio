@@ -10,6 +10,8 @@ import {
   SiMysql,
   SiFirebase,
   SiApachespark,
+  SiApacheairflow,
+  SiDbt,
 } from "react-icons/si";
 
 // TODO: array to store our information so we can map over it
@@ -17,7 +19,7 @@ const gg = [
   "Tasked with engineering and optimizing data workflows utilizing a technical stack that includes Python, SQL, Apache Spark/PySpark, Airflow, and dbt.",
   "Scheduled to analyze multi-modal datasets to support critical decision-making processes while adhering to strict security and compliance standards.",
 ];
-const ggStack = [SiPython, SiMysql, SiApachespark];
+const ggStack = [SiPython, SiMysql, SiApachespark, SiApacheairflow, SiDbt];
 
 const therapod = [
   "Built an AI scheduling feature that lets users book therapy sessions in plain English (ex. “next Friday at 2pm”). The system converts that into a real time slot, checks availability, handles time zones, and suggests alternatives automatically if the slot is taken.",

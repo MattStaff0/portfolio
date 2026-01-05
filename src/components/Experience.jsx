@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Work from "./Work";
+import Education from "./Education";
 
 export default function Experience() {
   const [activeTab, setActiveTab] = useState("work");
 
   return (
-    <div className="w-full max-w-5xl mt-20 px-4">
+    <div className="w-full max-w-5xl mt-20 px-4 pb-8">
       <div className="flex w-full bg-gray-800 p-1 rounded-xl mb-8">
         <button
           onClick={() => setActiveTab("work")}
@@ -32,7 +33,7 @@ export default function Experience() {
 
       {/* Content Area */}
       <div className="text-gray-300 text-center w-full">
-        {activeTab === "work" ? <Work /> : "Education Component Goes Here"}
+        {activeTab === "work" ? <Work /> : <Education />}
       </div>
     </div>
   );
